@@ -94,15 +94,15 @@
     combos {
         compatible = "zmk,combos";
 
-        left-shift-combo {
-            bindings = <&kp LEFT_SHIFT>;
-            key-positions = <37 50>;
+        esc-combo {
+            bindings = <&kp ESCAPE>;
+            key-positions = <37 38>;
             layers = <0>;
         };
 
-        right-shift-combo {
-            bindings = <&kp RIGHT_SHIFT>;
-            key-positions = <59 42>;
+        tab-combo {
+            bindings = <&kp TAB>;
+            key-positions = <42 41>;
         };
     };
 
@@ -119,12 +119,12 @@
             // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
-&kp F1      &kp F2  &kp F3                &kp F4                    &kp F5                                                                                                       &home_mod F6 K_MUTE        &home_mod F7 C_VOLUME_DOWN  &home_mod F8 C_VOLUME_UP  &home_mod F9 C_BRIGHTNESS_DEC  &home_mod F10 C_BRIGHTNESS_INC
-&trans      &trans  &trans                &trans                    &trans                    &trans                                                                     &trans  &trans                     &trans                      &trans                    &trans                         &trans
-&kp TAB     &kp Q   &kp W                 &kp E                     &kp R                     &kp T                                                                      &kp Y   &kp U                      &kp I                       &kp O                     &kp P                          &trans
-&kp ESC     &kp A   &home_mod LEFT_ALT S  &home_mod LEFT_CONTROL D  &home_mod LEFT_COMMAND F  &kp G                                                                      &kp H   &home_mod RIGHT_COMMAND J  &home_mod RIGHT_CONTROL K   &home_mod RIGHT_ALT L     &kp SEMICOLON                  &trans
-&trans      &kp Z   &kp X                 &kp C                     &lt 2 V                   &kp B   &trans          &trans  &layer_td  &trans  &trans     &trans       &kp N   &kp M                      &kp COMMA                   &kp DOT                   &kp FSLH                       &trans
-&magic 5 0  &trans  &trans                &trans                    &trans                            &kp LEFT_SHIFT  &mo 3   &trans     &trans  &kp ENTER  &lt 1 SPACE          &trans                     &trans                      &trans                    &trans                         &trans
+&trans      &trans  &trans                &trans                    &trans                                                                                                       &trans                     &trans                     &trans                 &trans         &trans
+&trans      &trans  &trans                &trans                    &trans                    &trans                                                                     &trans  &trans                     &trans                     &trans                 &trans         &trans
+&kp TAB     &kp Q   &kp W                 &kp E                     &kp R                     &kp T                                                                      &kp Y   &kp U                      &kp I                      &kp O                  &kp P          &trans
+&kp ESC     &kp A   &home_mod LEFT_ALT S  &home_mod LEFT_CONTROL D  &home_mod LEFT_COMMAND F  &kp G                                                                      &kp H   &home_mod RIGHT_COMMAND J  &home_mod RIGHT_CONTROL K  &home_mod RIGHT_ALT L  &kp SEMICOLON  &trans
+&trans      &kp Z   &kp X                 &kp C                     &lt 2 V                   &kp B   &trans          &trans  &layer_td  &trans  &trans     &trans       &kp N   &kp M                      &kp COMMA                  &kp DOT                &kp FSLH       &trans
+&magic 5 0  &trans  &trans                &trans                    &trans                            &kp LEFT_SHIFT  &mo 3   &trans     &trans  &kp ENTER  &lt 1 SPACE          &trans                     &trans                     &trans                 &trans         &trans
             >;
         };
 
