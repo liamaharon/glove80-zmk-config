@@ -29,7 +29,7 @@
             label = "LAYER_TAP_DANCE";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&to 0>, <&to 4>;
+            bindings = <&to 0>, <&to 3>;
         };
 
         magic: magic_hold_tap {
@@ -119,34 +119,23 @@
             // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
-&kp F1      &kp F2    &kp F3                &kp F4                    &kp F5                                                                                                                                         &home_mod F6 K_MUTE        &home_mod F7 C_VOLUME_DOWN  &home_mod F8 C_VOLUME_UP  &home_mod F9 C_BRIGHTNESS_DEC  &home_mod F10 C_BRIGHTNESS_INC
-&kp EQUAL   &kp N1    &kp N2                &kp N3                    &home_mod LG(LS(NUMBER_4)) NUMBER_4  &home_mod LG(LS(N5)) N5                                                                           &kp N6  &kp N7                     &kp N8                      &kp N9                    &kp N0                         &kp MINUS
-&kp TAB     &kp Q     &kp W                 &kp E                     &kp R                                &home_mod SPACE T                                                                                 &kp Y   &kp U                      &kp I                       &kp O                     &kp P                          &kp BSLH
-&kp ESC     &kp A     &home_mod LEFT_ALT S  &home_mod LEFT_CONTROL D  &home_mod LEFT_COMMAND F             &kp G                                                                                             &kp H   &home_mod RIGHT_COMMAND J  &home_mod RIGHT_CONTROL K   &home_mod RIGHT_ALT L     &kp SEMICOLON                  &kp SQT
-&kp GRAVE   &kp Z     &kp X                 &kp C                     &lt 3 V                              &kp B                    &trans          &trans         &layer_td   &trans  &trans   &trans       &kp N   &kp M                      &kp COMMA                   &kp DOT                   &kp FSLH                       &kp PG_UP
-&magic 2 0  &kp HOME  &kp END               &trans                    &trans                                                        &kp LEFT_SHIFT  &kp BACKSPACE  &kp DELETE  &trans  &kp RET  &lt 5 SPACE          &trans                     &trans                      &kp LBKT                  &kp RBKT                       &kp PG_DN
+&kp F1      &kp F2    &kp F3                &kp F4                    &kp F5                                                                                                                                &home_mod F6 K_MUTE        &home_mod F7 C_VOLUME_DOWN  &home_mod F8 C_VOLUME_UP  &home_mod F9 C_BRIGHTNESS_DEC  &home_mod F10 C_BRIGHTNESS_INC
+&kp EQUAL   &kp N1    &kp N2                &kp N3                    &home_mod LG(LS(NUMBER_4)) NUMBER_4  &home_mod LG(LS(N5)) N5                                                                  &kp N6  &kp N7                     &kp N8                      &kp N9                    &kp N0                         &kp MINUS
+&kp TAB     &kp Q     &kp W                 &kp E                     &kp R                                &home_mod SPACE T                                                                        &kp Y   &kp U                      &kp I                       &kp O                     &kp P                          &kp BSLH
+&kp ESC     &kp A     &home_mod LEFT_ALT S  &home_mod LEFT_CONTROL D  &home_mod LEFT_COMMAND F             &kp G                                                                                    &kp H   &home_mod RIGHT_COMMAND J  &home_mod RIGHT_CONTROL K   &home_mod RIGHT_ALT L     &kp SEMICOLON                  &kp SQT
+&kp GRAVE   &kp Z     &kp X                 &kp C                     &lt 2 V                              &kp B                    &trans          &trans  &layer_td  &trans  &trans  &trans       &kp N   &kp M                      &kp COMMA                   &kp DOT                   &kp FSLH                       &kp PG_UP
+&magic 4 0  &kp HOME  &kp END               &trans                    &trans                                                        &kp LEFT_SHIFT  &trans  &trans     &trans  &trans  &lt 1 SPACE          &trans                     &trans                      &kp LBKT                  &kp RBKT                       &kp PG_DN
             >;
         };
 
-        lower_layer {
+        symbol_layer {
             bindings = <
-&kp C_BRI_DN  &kp C_BRI_UP  &kp C_PREV  &kp C_NEXT  &kp C_PP                                                                         &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP   &none            &kp PAUSE_BREAK
-&trans        &none         &none       &none       &none      &kp HOME                                                   &kp LPAR   &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp PSCRN
-&trans        &none         &none       &kp UP      &none      &kp END                                                    &kp RPAR   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp SLCK
-&trans        &none         &kp LEFT    &kp DOWN    &kp RIGHT  &kp PG_UP                                                  &kp PRCNT  &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &none
-&trans        &kp K_CMENU   &none       &kp F11     &kp F12    &kp PG_DN  &trans  &trans  &to 0   &trans  &trans  &trans  &kp COMMA  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &trans
-&trans        &kp CAPS      &kp INS     &kp F11     &kp F12               &trans  &trans  &trans  &trans  &trans  &trans             &kp KP_N0   &kp KP_N0     &kp KP_DOT     &kp KP_ENTER     &trans
-            >;
-        };
-
-        magic_layer {
-            bindings = <
-&bt BT_CLR   &none            &none            &none            &none                                                                                     &none  &none  &none  &none  &bt BT_CLR_ALL
-&none        &none            &none            &none            &none            &none                                                             &none  &none  &none  &none  &none  &none
-&none        &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                                   &none  &none  &none  &none  &none  &none
-&bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                   &none  &none  &none  &none  &none  &bootloader
-&sys_reset   &none            &none            &none            &none            &none            &bt_2  &bt_3  &none         &none  &none  &none  &none  &none  &none  &none  &none  &sys_reset
-&none        &none            &none            &none            &none                             &bt_0  &bt_1  &out OUT_USB  &none  &none  &none         &none  &none  &none  &none  &to 0
+&trans  &trans                           &trans               &trans                &trans                                                                                                           &trans               &trans               &trans       &trans      &trans
+&trans  &trans                           &trans               &trans                &trans                 &trans                                                               &trans               &trans               &trans               &trans       &trans      &trans
+&trans  &home_mod LS(NUMBER_1) NUMBER_1  &home_mod LS(N2) N2  &home_mod LS(N3) N3   &home_mod LS(N4) N4    &home_mod LS(N5) N5                                                  &home_mod LS(N6) N6  &home_mod LS(N7) N7  &home_mod LS(N8) N8  &kp N9       &kp N0      &trans
+&trans  &kp LEFT_BRACKET                 &kp RIGHT_BRACKET    &kp LS(N9)            &kp LS(N0)             &kp LS(GRAVE)                                                        &kp BACKSPACE        &kp LS(MINUS)        &kp LS(BACKSLASH)    &kp LS(SQT)  &kp DELETE  &trans
+&trans  &kp LS(EQUAL)                    &kp EQUAL            &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp GRAVE            &trans  &trans  &trans  &trans  &trans  &trans  &kp ENTER            &kp MINUS            &kp BACKSLASH        &kp SQT      &trans      &trans
+&trans  &trans                           &trans               &trans                &trans                                      &trans  &trans  &trans  &trans  &trans  &trans                       &trans               &trans               &trans       &trans      &trans
             >;
         };
 
@@ -168,18 +157,18 @@
 &kp TAB     &kp Q     &kp W    &kp E     &kp R      &kp T                                                                                    &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
 &kp ESC     &kp A     &kp S    &kp D     &kp F      &kp G                                                                                    &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
 &kp GRAVE   &kp Z     &kp X    &kp C     &kp V      &kp B   &kp LSHFT  &kp LEFT_COMMAND  &layer_td   &kp LGUI  &kp RIGHT_COMMAND  &kp RSHFT  &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp PG_UP
-&magic 2 0  &kp HOME  &kp END  &kp LEFT  &kp RIGHT          &kp BSPC   &kp LEFT_CONTROL  &kp DELETE  &kp RALT  &kp RET            &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &kp PG_DN
+&magic 4 0  &kp HOME  &kp END  &kp LEFT  &kp RIGHT          &kp BSPC   &kp LEFT_CONTROL  &kp DELETE  &kp RALT  &kp RET            &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &kp PG_DN
             >;
         };
 
-        symbol_layer {
+        magic_layer {
             bindings = <
-&trans  &trans                           &trans               &trans                &trans                                                                                                           &trans               &trans               &trans       &trans  &trans
-&trans  &trans                           &trans               &trans                &trans                 &trans                                                               &trans               &trans               &trans               &trans       &trans  &trans
-&trans  &home_mod LS(NUMBER_1) NUMBER_1  &home_mod LS(N2) N2  &home_mod LS(N3) N3   &home_mod LS(N4) N4    &home_mod LS(N5) N5                                                  &home_mod LS(N6) N6  &home_mod LS(N7) N7  &home_mod LS(N8) N8  &kp N9       &kp N0  &trans
-&trans  &kp LEFT_BRACKET                 &kp RIGHT_BRACKET    &kp LS(N9)            &kp LS(N0)             &kp LS(GRAVE)                                                        &trans               &kp LS(MINUS)        &kp LS(BACKSLASH)    &kp LS(SQT)  &trans  &trans
-&trans  &kp LS(EQUAL)                    &kp EQUAL            &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp GRAVE            &trans  &trans  &trans  &trans  &trans  &trans  &trans               &kp MINUS            &kp BACKSLASH        &kp SQT      &trans  &trans
-&trans  &trans                           &trans               &trans                &trans                                      &trans  &trans  &trans  &trans  &trans  &trans                       &trans               &trans               &trans       &trans  &trans
+&bt BT_CLR   &none            &none            &none            &none                                                                                     &none  &none  &none  &none  &bt BT_CLR_ALL
+&none        &none            &none            &none            &none            &none                                                             &none  &none  &none  &none  &none  &none
+&none        &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                                   &none  &none  &none  &none  &none  &none
+&bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                   &none  &none  &none  &none  &none  &bootloader
+&sys_reset   &none            &none            &none            &none            &none            &bt_2  &bt_3  &none         &none  &none  &none  &none  &none  &none  &none  &none  &sys_reset
+&none        &none            &none            &none            &none                             &bt_0  &bt_1  &out OUT_USB  &none  &none  &none         &none  &none  &none  &none  &to 0
             >;
         };
     };
