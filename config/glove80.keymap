@@ -171,5 +171,16 @@
 &magic 2 0  &kp HOME  &kp END  &kp LEFT  &kp RIGHT          &kp BSPC   &kp LEFT_CONTROL  &kp DELETE  &kp RALT  &kp RET            &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &kp PG_DN
             >;
         };
+
+        symbol_layer {
+            bindings = <
+&trans  &trans                           &trans               &trans                &trans                                                                                                           &trans               &trans               &trans  &trans  &trans
+&trans  &trans                           &trans               &trans                &trans                 &trans                                                               &trans               &trans               &trans               &trans  &trans  &trans
+&trans  &home_mod LS(NUMBER_1) NUMBER_1  &home_mod LS(N2) N2  &home_mod LS(N3) N3   &home_mod LS(N4) N4    &home_mod LS(N5) N5                                                  &home_mod LS(N6) N6  &home_mod LS(N7) N7  &home_mod LS(N8) N8  &kp N9  &kp N0  &trans
+&trans  &kp LEFT_BRACKET                 &kp RIGHT_BRACKET    &kp LS(N9)            &kp LS(N0)             &trans                                                               &trans               &trans               &trans               &trans  &trans  &trans
+&trans  &trans                           &trans               &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &trans               &trans  &trans  &trans  &trans  &trans  &trans  &trans               &trans               &trans               &trans  &trans  &trans
+&trans  &trans                           &trans               &trans                &trans                                      &trans  &trans  &trans  &trans  &trans  &trans                       &trans               &trans               &trans  &trans  &trans
+            >;
+        };
     };
 };
