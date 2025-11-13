@@ -96,13 +96,13 @@
 
         esc-combo {
             bindings = <&kp ESCAPE>;
-            key-positions = <37 38>;
+            key-positions = <37 50>;
             layers = <0>;
         };
 
         tab-combo {
             bindings = <&kp TAB>;
-            key-positions = <42 41>;
+            key-positions = <42 59>;
         };
     };
 
