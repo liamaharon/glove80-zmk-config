@@ -29,7 +29,7 @@
             label = "LAYER_TAP_DANCE";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&to 0>, <&to 3>;
+            bindings = <&to 0>, <&to 4>;
         };
 
         magic: magic_hold_tap {
@@ -124,7 +124,7 @@
 &kp TAB     &kp Q   &kp W                 &kp E                     &kp R                     &kp T                                                                      &kp Y   &kp U                      &kp I                       &kp O                     &kp P                          &trans
 &kp ESC     &kp A   &home_mod LEFT_ALT S  &home_mod LEFT_CONTROL D  &home_mod LEFT_COMMAND F  &kp G                                                                      &kp H   &home_mod RIGHT_COMMAND J  &home_mod RIGHT_CONTROL K   &home_mod RIGHT_ALT L     &kp SEMICOLON                  &trans
 &trans      &kp Z   &kp X                 &kp C                     &lt 2 V                   &kp B   &trans          &trans  &layer_td  &trans  &trans     &trans       &kp N   &kp M                      &kp COMMA                   &kp DOT                   &kp FSLH                       &trans
-&magic 4 0  &trans  &trans                &trans                    &trans                            &kp LEFT_SHIFT  &trans  &trans     &trans  &kp ENTER  &lt 1 SPACE          &trans                     &trans                      &trans                    &trans                         &trans
+&magic 5 0  &trans  &trans                &trans                    &trans                            &kp LEFT_SHIFT  &mo 3   &trans     &trans  &kp ENTER  &lt 1 SPACE          &trans                     &trans                      &trans                    &trans                         &trans
             >;
         };
 
@@ -141,12 +141,23 @@
 
         rh_arrows {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                          &trans          &trans        &trans         &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans          &trans          &trans        &trans         &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &kp HOME        &trans          &trans        &kp END        &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT      &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp PAGE_UP     &trans          &trans        &kp PAGE_DOWN  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans                  &trans          &trans        &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans                                                                              &trans                &trans                &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                      &trans          &trans                &trans                &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                      &kp HOME        &kp C_VOLUME_UP       &kp C_VOLUME_DOWN     &kp END        &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                      &kp LEFT_ARROW  &kp DOWN_ARROW        &kp UP_ARROW          &kp RIGHT      &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &kp PAGE_UP     &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_DEC  &kp PAGE_DOWN  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &kp K_MUTE                  &trans                &trans                &trans         &trans  &trans
+            >;
+        };
+
+        fkey_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                                                                  &trans   &trans   &trans  &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans   &trans   &trans  &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans   &trans   &trans  &trans   &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                                                  &kp F6  &kp F7   &kp F8   &kp F9  &kp F10  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F11  &kp F12  &trans  &trans   &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans   &trans   &trans  &trans   &trans
             >;
         };
 
@@ -157,7 +168,7 @@
 &kp TAB     &kp Q     &kp W    &kp E     &kp R      &kp T                                                                                           &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
 &kp ESC     &kp A     &kp S    &kp D     &kp F      &kp G                                                                                           &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
 &kp GRAVE   &kp Z     &kp X    &kp C     &kp V      &kp B   &kp LEFT_CONTROL  &kp LEFT_COMMAND  &layer_td   &kp LGUI  &kp RIGHT_COMMAND  &kp RSHFT  &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp PG_UP
-&magic 4 0  &kp HOME  &kp END  &kp LEFT  &kp RIGHT          &kp LEFT_SHIFT    &kp BACKSPACE     &kp DELETE  &kp RALT  &kp RET            &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &kp PG_DN
+&magic 5 0  &kp HOME  &kp END  &kp LEFT  &kp RIGHT          &kp LEFT_SHIFT    &kp BACKSPACE     &kp DELETE  &kp RALT  &kp RET            &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &kp PG_DN
             >;
         };
 
