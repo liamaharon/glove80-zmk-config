@@ -123,7 +123,7 @@
 &trans      &trans  &trans                &trans                    &trans                    &trans                                                                     &trans  &trans                     &trans                     &trans                 &trans    &trans
 &trans      &kp Q   &kp W                 &kp F                     &kp P                     &kp B                                                                      &kp J   &kp L                      &kp U                      &kp Y                  &kp SEMI  &trans
 &trans      &kp A   &home_mod LEFT_ALT R  &home_mod LEFT_CONTROL S  &home_mod LEFT_COMMAND T  &kp G                                                                      &kp M   &home_mod RIGHT_COMMAND N  &home_mod RIGHT_CONTROL E  &home_mod RIGHT_ALT I  &kp O     &trans
-&trans      &kp Z   &kp X                 &kp C                     &lt 2 T                   &kp V   &trans          &trans  &layer_td  &trans  &trans     &trans       &kp K   &kp H                      &kp COMMA                  &kp DOT                &kp FSLH  &trans
+&trans      &kp Z   &kp X                 &kp C                     &lt 2 D                   &kp V   &trans          &trans  &layer_td  &trans  &trans     &trans       &kp K   &kp H                      &kp COMMA                  &kp DOT                &kp FSLH  &trans
 &magic 5 0  &trans  &trans                &trans                    &trans                            &kp LEFT_SHIFT  &mo 3   &trans     &trans  &kp ENTER  &lt 1 SPACE          &trans                     &trans                     &trans                 &trans    &trans
             >;
         };
