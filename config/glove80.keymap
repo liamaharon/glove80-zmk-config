@@ -110,17 +110,6 @@
     combos {
         compatible = "zmk,combos";
 
-        esc-combo {
-            bindings = <&kp ESCAPE>;
-            key-positions = <35 36>;
-            layers = <0>;
-        };
-
-        tab-combo {
-            bindings = <&kp TAB>;
-            key-positions = <23 24>;
-        };
-
         z-combo {
             bindings = <&kp Z>;
             key-positions = <47 48>;
@@ -129,11 +118,6 @@
         q-combo {
             bindings = <&kp Q>;
             key-positions = <44 43>;
-        };
-
-        enter-combo {
-            bindings = <&kp RETURN>;
-            key-positions = <62 61>;
         };
     };
 
