@@ -116,8 +116,8 @@
         };
 
         enter-combo {
-            bindings = <&kp ENTER>;
-            key-positions = <61 62>;
+            bindings = <&kp RETURN>;
+            key-positions = <62 61>;
         };
     };
 
