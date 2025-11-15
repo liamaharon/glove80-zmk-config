@@ -112,7 +112,7 @@
 
         z-combo {
             bindings = <&kp Z>;
-            key-positions = <31 32>;
+            key-positions = <32 31>;
         };
 
         q-combo {
