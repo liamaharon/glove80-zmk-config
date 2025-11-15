@@ -96,13 +96,23 @@
 
         esc-combo {
             bindings = <&kp ESCAPE>;
-            key-positions = <37 50>;
+            key-positions = <35 36>;
             layers = <0>;
         };
 
         tab-combo {
             bindings = <&kp TAB>;
-            key-positions = <42 59>;
+            key-positions = <23 24>;
+        };
+
+        z-combo {
+            bindings = <&kp Z>;
+            key-positions = <47 48>;
+        };
+
+        q-combo {
+            bindings = <&kp Q>;
+            key-positions = <44 43>;
         };
     };
 
@@ -123,7 +133,7 @@
 &trans      &trans                &trans                    &trans                    &trans                  &trans                                                                 &trans     &trans                   &trans                     &trans                     &trans                 &trans
 &trans      &kp V                 &kp W                     &kp G                     &kp M                   &kp J                                                                  &kp SEMI   &kp DOT                  &kp SQT                    &kp EQUAL                  &kp FSLH               &trans
 &trans      &home_mod LEFT_ALT S  &home_mod LEFT_CONTROL N  &home_mod LEFT_COMMAND T  &home_mod LEFT_SHIFT H  &kp K                                                                  &kp COMMA  &home_mod RIGHT_SHIFT A  &home_mod RIGHT_COMMAND E  &home_mod RIGHT_CONTROL I  &home_mod RIGHT_ALT C  &trans
-&trans      &kp P                 &kp F                     &kp D                     &lt 2 L                 &kp X   &trans  &trans  &layer_td  &trans  &trans         &trans       &kp MINUS  &kp U                    &kp O                      &kp Y                      &kp B                  &trans
+&trans      &kp P                 &kp F                     &kp D                     &kp L                   &kp X   &trans  &trans  &layer_td  &trans  &trans         &trans       &kp MINUS  &lt 2 U                  &kp O                      &kp Y                      &kp B                  &trans
 &magic 5 0  &trans                &trans                    &trans                    &trans                          &kp R   &mo 3   &trans     &trans  &kp BACKSPACE  &lt 1 SPACE             &trans                   &trans                     &trans                     &trans                 &trans
             >;
         };
