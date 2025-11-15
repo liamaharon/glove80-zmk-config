@@ -119,23 +119,23 @@
             // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
-&trans      &trans                &trans                    &trans                    &trans                                                                                                      &trans                   &trans                     &trans                     &trans                 &trans
-&trans      &trans                &trans                    &trans                    &trans                  &trans                                                                   &trans     &trans                   &trans                     &trans                     &trans                 &trans
-&trans      &kp V                 &kp W                     &kp G                     &kp M                   &kp J                                                                    &kp SEMI   &kp DOT                  &kp SQT                    &kp EQUAL                  &kp FSLH               &trans
-&trans      &home_mod LEFT_ALT S  &home_mod LEFT_CONTROL N  &home_mod LEFT_COMMAND T  &home_mod LEFT_SHIFT K  &kp K                                                                    &kp COMMA  &home_mod RIGHT_SHIFT A  &home_mod RIGHT_COMMAND E  &home_mod RIGHT_CONTROL I  &home_mod RIGHT_ALT C  &trans
-&trans      &kp P                 &kp F                     &kp D                     &lt 2 L                 &kp X   &kp BSPC  &trans  &layer_td  &trans  &trans         &trans       &kp MINUS  &kp U                    &kp O                      &kp Y                      &kp B                  &trans
-&magic 5 0  &trans                &trans                    &trans                    &trans                          &kp R     &mo 3   &trans     &trans  &kp BACKSPACE  &lt 1 SPACE             &trans                   &trans                     &trans                     &trans                 &trans
+&trans      &trans                &trans                    &trans                    &trans                                                                                                    &trans                   &trans                     &trans                     &trans                 &trans
+&trans      &trans                &trans                    &trans                    &trans                  &trans                                                                 &trans     &trans                   &trans                     &trans                     &trans                 &trans
+&trans      &kp V                 &kp W                     &kp G                     &kp M                   &kp J                                                                  &kp SEMI   &kp DOT                  &kp SQT                    &kp EQUAL                  &kp FSLH               &trans
+&trans      &home_mod LEFT_ALT S  &home_mod LEFT_CONTROL N  &home_mod LEFT_COMMAND T  &home_mod LEFT_SHIFT K  &kp K                                                                  &kp COMMA  &home_mod RIGHT_SHIFT A  &home_mod RIGHT_COMMAND E  &home_mod RIGHT_CONTROL I  &home_mod RIGHT_ALT C  &trans
+&trans      &kp P                 &kp F                     &kp D                     &lt 2 L                 &kp X   &trans  &trans  &layer_td  &trans  &trans         &trans       &kp MINUS  &kp U                    &kp O                      &kp Y                      &kp B                  &trans
+&magic 5 0  &trans                &trans                    &trans                    &trans                          &kp R   &mo 3   &trans     &trans  &kp BACKSPACE  &lt 1 SPACE             &trans                   &trans                     &trans                     &trans                 &trans
             >;
         };
 
         symbol_layer {
             bindings = <
-&trans  &trans            &trans             &trans                &trans                                                                                               &trans         &trans             &trans       &trans      &trans
-&trans  &trans            &trans             &trans                &trans                 &trans                                                         &trans         &trans         &trans             &trans       &trans      &trans
-&trans  &kp N1            &kp N2             &kp N3                &kp N4                 &kp N5                                                         &kp N6         &kp N7         &kp N8             &kp N9       &kp N0      &trans
-&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LS(N9)            &kp LS(N0)             &kp LS(GRAVE)                                                  &kp BACKSPACE  &kp LS(MINUS)  &kp LS(BACKSLASH)  &kp LS(SQT)  &kp DELETE  &trans
-&trans  &kp LS(EQUAL)     &kp EQUAL          &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp GRAVE      &trans  &trans  &trans  &trans  &trans  &trans  &trans         &kp MINUS      &kp BACKSLASH      &kp SQT      &trans      &trans
-&trans  &trans            &trans             &trans                &trans                                &trans  &trans  &trans  &trans  &trans  &trans                 &trans         &trans             &trans       &trans      &trans
+&trans  &trans            &trans             &trans                &trans                                                                                 &trans             &trans         &trans  &trans  &trans
+&trans  &trans            &trans             &trans                &trans                 &trans                                                  &trans  &trans             &trans         &trans  &trans  &trans
+&trans  &kp N1            &kp N2             &kp N3                &kp N4                 &kp N5                                                  &kp N6  &kp N7             &kp N8         &kp N9  &kp N0  &trans
+&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LS(N9)            &kp LS(N0)             &trans                                                  &trans  &kp LS(BACKSLASH)  &kp LS(GRAVE)  &trans  &trans  &trans
+&trans  &kp LS(COMMA)     &kp LS(PERIOD)     &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp BACKSLASH      &kp GRAVE      &trans  &trans  &trans
+&trans  &trans            &trans             &trans                &trans                         &trans  &trans  &trans  &trans  &trans  &trans          &trans             &trans         &trans  &trans  &trans
             >;
         };
 
