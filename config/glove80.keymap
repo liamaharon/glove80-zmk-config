@@ -141,12 +141,12 @@
 
         rh_arrows {
             bindings = <
-&trans  &trans         &trans        &trans           &trans                                                                                             &trans        &trans        &trans         &trans  &trans
-&trans  &trans         &trans        &trans           &trans          &trans                                                            &trans           &trans        &trans        &trans         &trans  &trans
-&trans  &kp PAGE_DOWN  &kp PAGE_UP   &kp END          &kp HOME        &kp DOWN                                                          &kp DOWN         &kp RIGHT     &kp HOME      &kp END        &trans  &trans
-&trans  &kp K_MUTE     &kp C_VOL_DN  &kp C_VOLUME_UP  &kp LEFT_ARROW  &kp UP_ARROW                                                      &kp C_VOLUME_UP  &kp C_VOL_DN  &kp PAGE_UP   &kp PAGE_DOWN  &trans  &trans
-&trans  &trans         &trans        &trans           &kp RIGHT       &trans        &trans  &trans  &trans  &trans  &trans  &trans      &kp UP           &kp LEFT      &kp C_BRI_UP  &kp C_BRI_DEC  &trans  &trans
-&trans  &trans         &trans        &trans           &trans                        &trans  &trans  &trans  &trans  &trans  &kp K_MUTE                   &trans        &trans        &trans         &trans  &trans
+&trans  &trans         &trans                &trans                &trans                                                                                &trans  &trans  &trans  &trans  &trans
+&trans  &trans         &trans                &trans                &trans          &trans                                                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp PAGE_DOWN  &kp PAGE_UP           &kp END               &kp HOME        &kp DOWN                                                      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp K_MUTE     &kp C_VOL_DN          &kp C_VOLUME_UP       &kp LEFT_ARROW  &kp UP_ARROW                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans         &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp RIGHT       &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans         &trans                &trans                &trans                        &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
