@@ -134,12 +134,12 @@
             // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
-&trans      &trans            &trans                &trans              &trans                                                                                                   &trans                 &trans               &trans                 &trans             &trans
-&trans      &trans            &trans                &trans              &trans                &trans                                                                  &trans     &trans                 &trans               &trans                 &trans             &trans
-&trans      &kp V             &kp W                 &kp G               &kp M                 &kp J                                                                   &kp SEMI   &kp DOT                &kp SQT              &kp EQUAL              &kp FSLH           &trans
-&trans      &hm_r LEFT_ALT S  &hm_r LEFT_CONTROL N  &hm_r LEFT_SHIFT T  &hm_r LEFT_COMMAND H  &kp K                                                                   &kp COMMA  &hm_l RIGHT_COMMAND A  &hm_l RIGHT_SHIFT E  &hm_l RIGHT_CONTROL I  &hm_l RIGHT_ALT C  &trans
-&trans      &kp P             &kp F                 &kp D               &kp L                 &kp X   &trans   &trans  &layer_td  &trans  &trans         &trans       &kp MINUS  &kp U                  &kp O                &kp Y                  &kp B              &trans
-&magic 5 0  &trans            &trans                &trans              &trans                        &lt 1 R  &mo 3   &trans     &trans  &kp BACKSPACE  &lt 2 SPACE             &trans                 &trans               &trans                 &trans             &trans
+&trans      &trans            &trans                &trans              &trans                                                                                            &trans                 &trans               &trans                 &trans             &trans
+&trans      &trans            &trans                &trans              &trans                &trans                                                           &trans     &trans                 &trans               &trans                 &trans             &trans
+&trans      &kp V             &kp W                 &kp G               &kp M                 &kp J                                                            &kp SEMI   &kp DOT                &kp SQT              &kp EQUAL              &kp FSLH           &trans
+&trans      &hm_r LEFT_ALT S  &hm_r LEFT_CONTROL N  &hm_r LEFT_SHIFT T  &hm_r LEFT_COMMAND H  &kp K                                                            &kp COMMA  &hm_l RIGHT_COMMAND A  &hm_l RIGHT_SHIFT E  &hm_l RIGHT_CONTROL I  &hm_l RIGHT_ALT C  &trans
+&trans      &kp P             &kp F                 &kp D               &kp L                 &kp X   &trans   &trans  &layer_td  &trans  &trans  &trans       &kp MINUS  &kp U                  &kp O                &kp Y                  &kp B              &trans
+&magic 5 0  &trans            &trans                &trans              &trans                        &lt 1 R  &mo 3   &trans     &trans  &trans  &lt 2 SPACE             &trans                 &trans               &trans                 &trans             &trans
             >;
         };
 
@@ -156,12 +156,12 @@
 
         nav_layer {
             bindings = <
-&trans  &trans         &trans                &trans                &trans                                                                                &trans  &trans  &trans  &trans  &trans
-&trans  &trans         &trans                &trans                &trans          &trans                                                        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp PAGE_DOWN  &kp PAGE_UP           &kp END               &kp HOME        &kp DOWN                                                      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp TAB        &kp ESCAPE            &kp ENTER             &kp LEFT_ARROW  &kp UP_ARROW                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans         &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp RIGHT       &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans         &trans                &trans                &trans                        &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans         &trans         &trans     &trans                                                                                &trans  &trans  &trans  &trans  &trans
+&trans  &trans         &trans         &trans     &trans          &trans                                                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp PAGE_DOWN  &kp PAGE_UP    &kp HOME   &kp END         &kp DOWN                                                      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp ESCAPE     &kp BACKSPACE  &kp ENTER  &kp LEFT_ARROW  &kp UP_ARROW                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans         &kp DELETE     &kp TAB    &kp RIGHT       &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans         &trans         &trans     &trans                        &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
