@@ -156,12 +156,12 @@
 
         nav_layer {
             bindings = <
-&trans  &trans         &trans         &trans     &trans                                                                                &trans  &trans  &trans  &trans  &trans
-&trans  &trans         &trans         &trans     &trans          &trans                                                        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp PAGE_DOWN  &kp PAGE_UP    &kp HOME   &kp END         &kp DOWN                                                      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp ESCAPE     &kp BACKSPACE  &kp ENTER  &kp LEFT_ARROW  &kp UP_ARROW                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans         &kp DELETE     &kp TAB    &kp RIGHT       &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans         &trans         &trans     &trans                        &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans         &trans       &trans         &trans                                                                                &trans  &trans  &trans  &trans  &trans
+&trans  &trans         &trans       &trans         &trans          &trans                                                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp PAGE_DOWN  &kp PAGE_UP  &kp HOME       &kp END         &kp DOWN                                                      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp ESCAPE     &kp ENTER    &kp BACKSPACE  &kp LEFT_ARROW  &kp UP_ARROW                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp TAB        &trans       &kp DELETE     &kp RIGHT       &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans         &trans       &trans         &trans                        &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
