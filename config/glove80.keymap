@@ -29,7 +29,7 @@
             label = "LAYER_TAP_DANCE";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&to 0>, <&to 4>;
+            bindings = <&to 0>, <&to 1>;
         };
 
         magic: magic_hold_tap {
@@ -139,7 +139,18 @@
 &trans      &kp V             &kp W                 &kp G               &kp M                 &kp J                                                            &kp SEMI   &kp DOT                &kp SQT              &kp EQUAL              &kp FSLH           &trans
 &trans      &hm_r LEFT_ALT S  &hm_r LEFT_CONTROL N  &hm_r LEFT_SHIFT T  &hm_r LEFT_COMMAND H  &kp K                                                            &kp COMMA  &hm_l RIGHT_COMMAND A  &hm_l RIGHT_SHIFT E  &hm_l RIGHT_CONTROL I  &hm_l RIGHT_ALT C  &trans
 &trans      &kp P             &kp F                 &kp D               &kp L                 &kp X   &trans   &trans  &trans  &trans  &trans     &trans       &kp MINUS  &kp U                  &kp O                &kp Y                  &kp B              &trans
-&magic 5 0  &trans            &trans                &trans              &trans                        &lt 1 R  &mo 3   &trans  &trans  &layer_td  &lt 2 SPACE             &trans                 &trans               &trans                 &trans             &trans
+&magic 5 0  &trans            &trans                &trans              &trans                        &lt 2 R  &mo 4   &trans  &trans  &layer_td  &lt 3 SPACE             &trans                 &trans               &trans                 &trans             &trans
+            >;
+        };
+
+        gaming_layer {
+            bindings = <
+&trans      &trans  &trans  &trans  &trans                                                                              &trans                 &trans               &trans                 &trans             &trans
+&trans      &trans  &trans  &trans  &trans  &trans                                                           &trans     &trans                 &trans               &trans                 &trans             &trans
+&trans      &kp V   &kp W   &kp G   &kp M   &kp J                                                            &kp SEMI   &kp DOT                &kp SQT              &kp EQUAL              &kp FSLH           &trans
+&trans      &kp S   &kp N   &kp T   &kp H   &kp K                                                            &kp COMMA  &hm_l RIGHT_COMMAND A  &hm_l RIGHT_SHIFT E  &hm_l RIGHT_CONTROL I  &hm_l RIGHT_ALT C  &trans
+&trans      &kp P   &kp F   &kp D   &kp L   &kp X   &trans   &trans  &trans  &mo 0   &trans     &trans       &kp MINUS  &kp U                  &kp O                &kp Y                  &kp B              &trans
+&magic 5 0  &trans  &trans  &trans  &trans          &lt 2 R  &mo 4   &trans  &trans  &layer_td  &lt 3 SPACE             &trans                 &trans               &trans                 &trans             &trans
             >;
         };
 
@@ -173,17 +184,6 @@
 &trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5                                                  &kp F6  &kp F7                &kp F8                &kp F9  &kp F10  &trans
 &trans  &kp F11  &kp F12  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp C_VOLUME_UP       &kp C_VOLUME_DOWN     &trans  &trans   &trans
 &trans  &trans   &trans   &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans                &trans                &trans  &trans   &trans
-            >;
-        };
-
-        gaming_layer {
-            bindings = <
-&trans      &trans  &trans  &trans  &trans                                                                              &trans                 &trans               &trans                 &trans             &trans
-&trans      &trans  &trans  &trans  &trans  &trans                                                           &trans     &trans                 &trans               &trans                 &trans             &trans
-&trans      &kp V   &kp W   &kp G   &kp M   &kp J                                                            &kp SEMI   &kp DOT                &kp SQT              &kp EQUAL              &kp FSLH           &trans
-&trans      &kp S   &kp N   &kp T   &kp H   &kp K                                                            &kp COMMA  &hm_l RIGHT_COMMAND A  &hm_l RIGHT_SHIFT E  &hm_l RIGHT_CONTROL I  &hm_l RIGHT_ALT C  &trans
-&trans      &kp P   &kp F   &kp D   &kp L   &kp X   &trans   &trans  &trans  &mo 0   &trans     &trans       &kp MINUS  &kp U                  &kp O                &kp Y                  &kp B              &trans
-&magic 5 0  &trans  &trans  &trans  &trans          &lt 1 R  &mo 3   &trans  &trans  &layer_td  &lt 2 SPACE             &trans                 &trans               &trans                 &trans             &trans
             >;
         };
 
