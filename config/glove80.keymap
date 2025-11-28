@@ -117,7 +117,7 @@
 
         q-combo {
             bindings = <&kp Q>;
-            key-positions = <44 43>;
+            key-positions = <30 31>;
         };
     };
 
